@@ -1,0 +1,87 @@
+<html>
+<head>
+  <style>
+  .cadre {
+    border:1px solid blue;
+    fill-opacity:0.1
+  }
+  </style>
+<link rel="stylesheet" type="text/css" href="us_template.css">
+<script>
+var module = "";
+</script>
+<script src="buildLego.js"></script>
+<script src="us_catalog.js"></script>
+<script>
+
+function init() {
+  var select_image = document.getElementById("select_image");
+
+    for(var one_image in svg_images) {
+      console.log(one_image);
+      var opt = document.createElement('option');
+      opt.value = one_image;
+      opt.innerHTML = one_image;
+      select_image.appendChild(opt);
+    }
+  display_image("prod1");
+}
+
+function display_image(us_name) {
+  var mySvg = document.getElementById("mySVG");
+
+  clear_element(mySvg);
+
+  var usGroup = appendElement(mySvg, "g", "us")
+  //var usx = appendElement(usGroup, "g", "usx")
+
+  // call us method
+  svg_images[us_name](usGroup);
+//  usx.setAttributeNS(null,"transform","rotate(90)");
+  translateToCenter(mySvg, usGroup);
+
+  display_dom(mySvg);
+
+}
+
+function clear_element(element) {
+  element.innerHTML = "";
+}
+
+function display_dom(element) {
+  document.getElementById("path").value = element.innerHTML;
+}
+
+function translateToCenter(globalSvg, groupToCenter) {
+  var bbox = globalSvg.getBBox();
+  var svgWidth = globalSvg.getAttribute("width")
+  var x_to_translate = (svgWidth-bbox.width)/2-bbox.x;
+
+  groupToCenter.setAttributeNS(null,"transform","translate("+x_to_translate+", 0)");
+}
+
+</script>
+</head>
+<body onload="init()">
+
+<h1>Build a SVG Lego</h1>
+
+<!--object id="brick-svg" width="400" height="300" type="image/svg+xml" data="brick.svg"></object-->
+<table>
+  <tr>
+    <td>
+      <svg version="1.1"
+           xmlns="http://www.w3.org/2000/svg"
+           id="mySVG"
+           width="400" height="300">
+      </svg>
+    </td>
+    <td>
+      <select id="select_image" onchange="display_image(this.options[this.selectedIndex].value)"></select>
+      </br>
+      <textarea id="path" rows="20" cols="150"></textarea>
+  </td>
+  </tr>
+</table>
+</body>
+</html>
