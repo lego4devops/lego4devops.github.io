@@ -1,0 +1,32 @@
+.background { fill:white; }
+
+.brick {
+  fill-opacity: 1;
+  stroke-width: 2;
+  fill: #3080d0;
+  stroke: #1060a0;
+}
+.strike {
+  fill-opacity: 1;
+  stroke-width: 6;
+  fill: #FF0000;
+  stroke: #FF0000;
+}
+
+.blue1, .blue2, .blue3 { stroke: #005090; }
+.blue1 { fill: #3080d0; }
+.blue2 { fill: #2070c0; }
+.blue3 { fill: #0060b0; }
+.red1, .red2, .red3 { stroke: #990000; }
+.red1 { fill: #dd0000; }
+.red2 { fill: #cc0000; }
+.red3 { fill: #aa0000; }
+.yellow1, .yellow2, .yellow3 { stroke: #aaaa00; }
+.yellow1 { fill: #ffff00; }
+.yellow2 { fill: #eeee00; }
+.yellow3 { fill: #cccc00;}
+
+.white1, .white2, .white3 { stroke: #aaaaaa; }
+.white1 { fill: #ffffff; }
+.white2 { fill: #eeeeee; }
+.white3 { fill: #cccccc;}

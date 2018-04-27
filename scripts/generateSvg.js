@@ -1,14 +1,14 @@
 var lego = require("./buildLego");
 var uss = require("./us_catalog");
 var fs = require('fs');
+const jsdom = require("jsdom");
+
+const outputDir="tmp/"
 
 create_group = lego.create_group;
 position = lego.position;
 brick = lego.brick;
 point3d = lego.point3d;
-
-const jsdom = require("jsdom");
-
 
 function save(filename, content) {
   var css = fs.readFileSync('us_template.css', { "encoding": "utf8"}).toString("utf8");
@@ -21,7 +21,7 @@ function save(filename, content) {
   fileContent += '</svg>';
 
 console.log('CONTENT:' + fileContent)
-  fs.writeFile(filename, fileContent, function (err) {
+  fs.writeFile(outputDir+filename, fileContent, function (err) {
     if (err) throw err;
     console.log(filename + ' saved!');
   });
