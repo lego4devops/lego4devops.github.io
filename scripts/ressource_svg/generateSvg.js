@@ -3,7 +3,7 @@ var uss = require("./us_catalog");
 var fs = require('fs');
 const jsdom = require("jsdom");
 
-const outputDir="tmp/"
+const outputDir=""
 
 create_group = lego.create_group;
 position = lego.position;

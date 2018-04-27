@@ -1,0 +1,171 @@
+
+= Lego4devops developers functionalities
+:notitle:
+# Set language adding into command line: --attribute language=fr
+:language_fr:
+
+:us_nb: 1
+ifeval::["{language}"=="fr"]
+:us_text1: Pas de blanc
+:us_text2: Pas de bleu
+endif::[]
+ifeval::["{language}"=="en"]
+:us_text1: No white
+:us_text2: No blue
+endif::[]
+
+include::us-template.adoc[]
+
+<<<
+
+:us_nb: 2
+ifeval::["{language}"=="fr"]
+:us_text1: Les briques de même forme
+:us_text2: ont la même couleur
+endif::[]
+ifeval::["{language}"=="en"]
+:us_text1: Bricks of the same shape
+:us_text2: have the same color
+endif::[]
+
+include::us-template.adoc[]
+
+<<<
+
+:us_nb: 3
+ifeval::["{language}"=="fr"]
+:us_text1: Le rouge n’est pas
+:us_text2: à une extrémité
+endif::[]
+ifeval::["{language}"=="en"]
+:us_text1: Red is not red
+:us_text2: at one end
+endif::[]
+
+include::us-template.adoc[]
+
+<<<
+
+:us_nb: 4
+ifeval::["{language}"=="fr"]
+:us_text1: Toutes les briques
+:us_text2: ont la même forme
+endif::[]
+ifeval::["{language}"=="en"]
+:us_text1: All bricks
+:us_text2: have the same shape
+endif::[]
+
+include::us-template.adoc[]
+
+<<<
+
+:us_nb: 5
+ifeval::["{language}"=="fr"]
+:us_text1: Les briques de même couleur
+:us_text2: ne se touchent pas
+endif::[]
+ifeval::["{language}"=="en"]
+:us_text1: Bricks of the same color
+:us_text2: do not touch
+endif::[]
+
+include::us-template.adoc[]
+
+<<<
+
+:us_nb: 6
+ifeval::["{language}"=="fr"]
+:us_text1: Que des briques
+:us_text2: de 1 de large
+endif::[]
+ifeval::["{language}"=="en"]
+:us_text1: Only bricks
+:us_text2: with 1 wide
+endif::[]
+
+include::us-template.adoc[]
+
+<<<
+
+:us_nb: 7
+ifeval::["{language}"=="fr"]
+:us_text1: Au moins
+:us_text2: 4 couleurs différentes
+endif::[]
+ifeval::["{language}"=="en"]
+:us_text1: At least
+:us_text2: 4 different colors
+endif::[]
+
+include::us-template.adoc[]
+
+<<<
+
+:us_nb: 8
+ifeval::["{language}"=="fr"]
+:us_text1: Que des briques
+:us_text2: de 2 de large
+endif::[]
+ifeval::["{language}"=="en"]
+:us_text1: Only bricks
+:us_text2: with 2 wide
+endif::[]
+
+include::us-template.adoc[]
+
+<<<
+
+:us_nb: 9
+ifeval::["{language}"=="fr"]
+:us_text1: Les briques de même forme
+:us_text2: ont des couleurs différentes
+endif::[]
+ifeval::["{language}"=="en"]
+:us_text1: Bricks of the same shape
+:us_text2: have different colors
+endif::[]
+
+include::us-template.adoc[]
+
+<<<
+
+:us_nb: 10
+ifeval::["{language}"=="fr"]
+:us_text1: Au moins
+:us_text2: 3 couleurs différentes
+endif::[]
+ifeval::["{language}"=="en"]
+:us_text1: At least
+:us_text2: 3 different colors
+endif::[]
+
+include::us-template.adoc[]
+
+<<<
+
+:us_nb: 11
+ifeval::["{language}"=="fr"]
+:us_text1: Pas de jaune
+:us_text2: Pas de rouge
+endif::[]
+ifeval::["{language}"=="en"]
+:us_text1: No yellow
+:us_text2: No red
+endif::[]
+
+include::us-template.adoc[]
+
+<<<
+
+:us_nb: 12
+ifeval::["{language}"=="fr"]
+:us_text1: Les extrémités sont
+:us_text2: de la même couleur
+endif::[]
+ifeval::["{language}"=="en"]
+:us_text1: The ends have
+:us_text2: the same color
+endif::[]
+
+include::us-template.adoc[]

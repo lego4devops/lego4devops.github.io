@@ -1,0 +1,15 @@
+
+[cols="<.>20,^.^60,>.>20"]
+[grid=none]
+|====
+| link:#lego4devops[] || #{us_nb}
+| image:licence.png[licence, 150, 100]
+| {us_text1}
+
+{us_text2}
+
+image:us{us_nb}.svg[SVG_file, 500, 100]
+| image:logo.png[logo, 150, 100]
+|====
+
+<<<
